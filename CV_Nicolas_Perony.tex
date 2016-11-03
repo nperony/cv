@@ -1,0 +1,186 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[grey]{casual}% optional argument are 'blue' (default), 'orange',
+%'red', 'green', 'grey' and 'roman' (for roman instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+
+
+\usepackage[official]{eurosym}
+
+
+%\setlength{\hintscolumnwidth}{3cm}
+% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}
+% only for the classic theme, if you want to change the width of your name
+%placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}
+% required when changes are made to page layout lengths
+
+% personal data
+\firstname{Nicolas Perony}
+\familyname{}
+% \title{Resum� title (optional)}
+\address{Germaniastrasse 50}{8006 Zurich, Switzerland}
+% \mobile{mobile (optional)}
+\phone{+41 76 242 32 26}
+% \fax{+41 44 632 18 80}
+\email{nicolas.perony@gmail.com}
+% \homepage{www.sg.ethz.ch/team/people/nperony}
+\extrainfo{
+{\href{https://www.linkedin.com/in/nicolasperony}{\includegraphics[scale=0.1]{icon-linkedin.png}~LinkedIn:~nicolasperony}~\quad~\href{https://www.twitter.com/nicolasperony}{\includegraphics[scale=0.1]{icon-twitter.png}~Twitter:~@nicolasperony}}
+}
+\photo[60pt]{portrait_tamedia.jpg}
+%\quote{Some quote (optional)}
+
+% to show numerical labels in the bibliography; only useful for citations
+% \makeatletter
+% \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+% \makeatother
+
+% normal style for URLs
+\makeatletter
+\def\url@normalstyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+
+% bibliography with mutiple entries
+\usepackage{multibib}
+\newcites{pubBooks,pubForthcoming,pubJournals,pubConfs,pubTheses}{{Books \& book chapters},{Forthcoming papers},{Peer-reviewed journal articles},{Peer-reviewed conference proceedings},{Theses}}
+
+\urlstyle{normal}
+
+%\nopagenumbers{}
+% uncomment to suppress automatic page numbering for CVs longer than one page
+
+\begin{document}
+\maketitle
+\vspace{-1cm}
+
+\section{Professional experience \normalsize \textmd{(job details on LinkedIn profile)}}
+\cventry{08.2016-present}{Team Lead Data Science \& AI}{Hyperloop Transportation Technologies (remote)}{}{}{}
+\cventry{08.2015-08.2016}{Data Scientist}{Hyperloop Transportation Technologies, Los Angeles (remote)}{}{}{}
+\cventry{12.2015-present}{Co-Founder, Volunteer}{NGO Slow Motion Projects, Zurich}{}{}{}
+\cventry{02.2015-03.2016}{Data Scientist}{Tamedia Digital, Zurich}{}{}{}
+\cventry{07.2014-present}{Co-Founder, Head of Research}{ECUREX GmbH, Zurich}{}{}{}
+\cventry{01.2014-01.2015}{Lecturer\textmd{ (\textit{Dozent})}}{ETH Zurich, \small Department of Management, Technology and Economics}{}{}{}
+\cventry{12.2014-01.2015}{Guest researcher}{Wissenschaftskolleg zu Berlin; Indiana \& Greifswald Universities}{}{}{}
+\cventry{04.2012-12.2014}{Postdoctoral research associate}{ETH Zurich, \small Chair of Systems Design}{}{}{}
+\cventry{04.2012-11.2013}{Postdoctoral research associate%\textmd{ (external affiliation)}
+}{University of Zurich \small (external affiliation)}{}{}{}
+
+\vspace{-0.3cm}
+\section{Education}
+\cventry{2008--2012}{Ph.D., \normalsize \textmd{Complex Systems \& Data Mining}}{ETH Zurich}{Switzerland}{}{Topic: {\em Comparative analysis of social interactions in animal groups}. Supervisor: Prof. Frank Schweitzer. Thesis awarded the ETH medal in January 2013.}
+\cventry{2003--2008}{B.Eng. and M.Eng./M.Sc.}{INSA Toulouse}{France}{}{Degree in Electrical Engineering, specialised in Electronics \& Embedded Systems. M.Sc. project at the University of Zurich (with Prof. Marta Manser). Final grade: 17/20 (US A equivalent).}
+\cventry{2003}{Baccalaur\'eat}{Toulon}{France}{}{Scientific Series, specialty in Mathematics. Final grade: \textit{Tr\`es bien (Highest Honours)}.}
+
+\vspace{-0.3cm}
+\section{Interests \& skills}
+\cventry{Research interests}{Data Mining \& Pattern recognition: \textmd{Automatic extraction of knowledge from unstructured, large data sets; Supervised and unsupervised learning models for classification and prediction; Natural Language Processing; Statistical hypothesis testing and frequentist inference}}{}{}{}{}
+\cventry{}{Social complexity \& Collective behaviour: \textmd{Structure and dynamics of social interactions in complex societies; Agent-based modelling of collective social dynamics; Social network analysis and pattern characterisation; Collective intelligence and group decision making}}{}{}{}{}
+\newline{}
+\cventry{Professional skills}{\textmd{Team player and leader, able to supervise students and coach employees, lead projects independently, organise and conduct meetings/discussions, clearly present results, write proposals and management reports}}{}{}{}{}
+\cventry{Scientific skills}{\textmd{Processing and mining of large data sets, network analysis, agent-based simulations, stochastic modelling, database management}}{}{}{}{}
+\cventry{Technical skills}{\textmd{Use of UNIX systems. Tools \& programming paradigms: Python (Numpy/SciPy, scikit-learn, GraphLab), MATLAB, Shell, Mathematica, R, Java, SQL, \LaTeX}}{}{}{}{}
+
+\newpage
+\vspace*{-0.7cm}
+\section{Selected awards \& grants}
+\cventry{2016}{\textmd{Tamedia Data Analytics Excellency Award, honorary prize given by the CTO}}{}{}{}{}
+\cventry{2015}{\textmd{Grant of the Swiss National Science Foundation for Interdisciplinary Research, with K. Aminian (EPF Lausanne) and A. Ozgul (University of Zurich): CHF 700'000 (declined)}}{}{}{}{}
+\cventry{2014}{\textmd{Popular science talk ``The secret social lives of bats'' selected as TED talk of the day}}{}{}{}{}
+\cventry{2013}{\textmd{ETH Zurich medal awarded for doctoral thesis. CHF 1'500 cash prize}}{}{}{}{}
+\cventry{2012}{\textmd{Grant of the Swiss National Science Foundation for Interdisciplinary Research, with F. Schweitzer (ETH Zurich) and B. K\"onig (University of Zurich): CHF 492'111}}{}{}{}{}
+\cventry{2010}{\textmd{2$^{\hbox{\scriptsize nd}}$ best paper award at ECCS'10 (European Conference on Complex Systems), for the paper {\em A stochastic model of social interaction in wild house mice}. EUR\ 200 cash prize}}{}{}{}{}
+\cventry{2008}{\textmd{Master thesis selected among the 10 best (out of 400) at INSA Toulouse, for the work {\em GPS tracking and heart rate monitoring in meerkats: a technical approach}}}{}{}{}{}
+
+\vspace*{-0.5cm}
+\section{Teaching experience}
+\cventry{Autumn 2015}{Bitcoin: Evolution or Revolution?}{Zurich University of Applied Sciences in Business Administration (HWZ)}{Lecturer}{CAS Disruptive Technologies}{}{}
+\cventry{Spring 2014}{Agent-Based Modelling of Social Systems}{ETH Zurich}{Lecturer}{Department of Management, Technology and Economics}{}%Prepared and taught lectures, supervised student projects, graded final performance.}
+\cventry{Spring 2014}{Animal Behaviour Literature Seminar}{University of Zurich}{Lecturer, coordinator}{Institute of Evolutionary Biology and Environmental Studies}{}%Created discussion schedule, interactively taught important notions, coordinated guest lecturers.}
+\cventry{Spring 2010}{Complex Adaptive Systems}{ETH Zurich}{Teaching assistant}{Department of Management, Technology and Economics}{}
+
+\vspace*{-0.5cm}
+\section{Academic activities}
+\cventry{Reviewer for}{\textmd{Institutions: German Research Foundation, Springer, Journals: \textit{PLOS Computational Biology}, \textit{Proceedings of the Royal Society B}, \textit{Journal of the Royal Society Interface}, \textit{PLOS ONE}, \textit{Animal Behaviour}, \textit{Behavioral Ecology and Sociobiology}, \textit{Ethology}, \textit{Ecological Modelling}}}{\textup{Conferences:} \textit{ECCS, ICAART, SocialSimulation}}{}{}{}
+\cventry{Organiser}{\textmd{Conference ``Peer-to-Peer Financial Systems'', Deutsche Bundesbank, Jan. 29-30, 2015}}{}{}{}{}
+\cventry{}{\textmd{Workshop ``Quantitative Analysis of Collective Behaviour: From the Lab to the Wild'', 2014 Conference of the Animal Behavior Society, Princeton NJ, USA}}{}{}{}{}
+
+\vspace*{-0.5cm}
+\section{Science outreach}
+\cventry{2016}{\textmd{Volunteering work on science-based environmental education projects covering sustainability, conservation, and data science in developing regions of Asia}}{}{}{}{}
+\cventry{2013-2015}{\textmd{Invited popular science talks on complexity and data science at TEDxZurich and TEDxGateway (Mumbai), one featured in the TED.com collection. Over 1M combined views}}{}{}{}{}
+\cventry{2010-present}{\textmd{Work covered in public media such as BBC, ScienceNOW, Discovery News, Smithsonian Magazine, New Scientist, ABC Science, MSNBC, ScienceNews, The Daily Mail..}}{}{}{}{}
+\cventry{}{\textmd{Various interviews for public radio and popular science programmes}}{}{}{}{}
+\cventry{}{\textmd{Detailed list at \url{http://www.sg.ethz.ch/team/people/nperony/inthemedia}}}{}{}{}{}
+
+\vspace*{-0.6cm}
+\section{Personal information}
+\cventry{Personal details}{\textmd{French citizen (Swiss C permit). Born on November 22, 1986 (29 years old). Unmarried}}{}{}{}{}
+\cventry{Languages}{\textmd{English (fluent), French (native), German (proficient / C1), Italian (conversational)}}{}{}{}{}
+
+% \newpage
+
+{
+\raggedleft{\firstnamestyle{{\fontsize{30}{32}\sffamily\mdseries\upshape Publications \& Talks}}~\familynamestyle{}}\\[-.35em]
+{\color{firstnamecolor}\rule{\textwidth}{.25ex}\\[2.5em]}
+}
+
+\section{Scientific talks}
+\cventry{2008-present}{\textmd{Over 50 invited lectures, seminars and conference presentations}}{}{}{}{}
+\cventry{}{\textmd{Detailed list at \url{www.sg.ethz.ch/team/people/nperony/talks}}}{}{}{}{}
+
+%Without multibib
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{myPublications}
+
+% Publications from a BibTeX file using the multibib package
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+
+% \maketitle
+\section{Publications}
+% \section{Publications {\normalsize(last updated: \today)}}
+\newcounter{myPubNumber}
+\setcounter{myPubNumber}{17}
+\renewcommand*{\bibliographyitemlabel}{\addtocounter{myPubNumber}{-1}{[\arabic{myPubNumber}}]}
+% Publications from a BibTeX file without multibib
+% \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+% need to run after pdflatex: bibtex pubInprep.aux, bibtex pubSubmitted.aux, bibtex pubPublished.aux bibtex pubTheses.aux
+
+%
+\bibliographystylepubBooks{unsrt}
+\bibliographypubBooks{myPublications}
+\nocitepubBooks{aste2016,sueur2015a, sueur2015b, sueur2015c}
+% 
+\bibliographystylepubForthcoming{unsrt}
+\bibliographypubForthcoming{myPublications}
+\nocitepubForthcoming{richardson2014}
+% 
+\bibliographystylepubJournals{unsrt}
+\bibliographypubJournals{myPublications}
+\nocitepubJournals{garcia2014,auclair2014,perony2013b,baigger2013,svercel2013,perony2013,perony2012d,kerth2011}
+% 
+\bibliographystylepubConfs{unsrt}
+\bibliographypubConfs{myPublications}
+\nocitepubConfs{perony2012c, perony2012b,perony2010}
+
+\renewcommand*{\bibliographyitemlabel}{}
+
+\bibliographystylepubTheses{unsrt}
+\bibliographypubTheses{myPublications}
+\nocitepubTheses{perony2012,perony2008}
+
+\vspace*{0.5cm}
+\hspace*{2.87cm}$^*$Joint first authorship
+
+\end{document}

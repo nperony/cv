@@ -1,0 +1,235 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[grey]{casual}% optional argument are 'blue' (default), 'orange',
+%'red', 'green', 'grey' and 'roman' (for roman instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+
+
+\usepackage[official]{eurosym}
+
+
+%\setlength{\hintscolumnwidth}{3cm}
+% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}
+% only for the classic theme, if you want to change the width of your name
+%placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}
+% required when changes are made to page layout lengths
+
+% personal data
+\firstname{Dr Nicolas Perony}
+\familyname{}
+% \title{Resumé title (optional)}
+\address{\hspace*{-1cm}ETH Zurich, Chair of Systems Design}{Weinbergstrasse 56/58, 8092 Zurich, Suisse}
+% \mobile{mobile (optional)}
+\phone{+41.44.63.28439}
+%\fax{+41.44.63.21880}
+\email{nperony@ethz.ch}
+\homepage{www.sg.ethz.ch/team/people/nperony}
+% \extrainfo{additional information (optional)}
+\photo[100pt]{portrait_small_flipped_lr.jpg}
+%\quote{Some quote (optional)}
+
+% to show numerical labels in the bibliography; only useful for citations
+% \makeatletter
+% \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+% \makeatother
+
+% normal style for URLs
+\makeatletter
+\def\url@normalstyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+
+% bibliography with mutiple entries
+\usepackage{multibib}
+\newcites{pubForthcoming,pubJournals,pubConfs,pubTheses}{{\`A paraître},{Articles dans des revues à comité de lecture},{Actes de conférences à comité de lecture},{Thèses}}
+
+\urlstyle{normal}
+
+%\nopagenumbers{}
+% uncomment to suppress automatic page numbering for CVs longer than one page
+
+\begin{document}
+\maketitle
+\vspace{-1.3cm}
+
+\section{Expérience professionnelle}
+\cventry{2014--présent}{Maître de conférences \textmd{(Dozent)}}{ETH Zurich, Département de Management, Technologie et \'Economie}{}{}{}
+\cventry{2012--présent}{Chercheur postdoctoral}{ETH Zurich, Chair of Systems Design}{}{}{}
+\cventry{2012--2013}{Chercheur postdoctoral \textmd{(affiliation externe)}}{Université de Zurich, Institut de Biologie de l'\'Evolution et des Sciences de l'Environnement}{}{}{} %Institute of Evolutionary Biology and Environmental Studies
+
+\vspace*{-0.35cm}
+\section{\'Education}
+\cventry{2008--2012}{Doctorat}{ETH Zurich}{Suisse}{}{Sujet: {\em Comparative analysis of social interactions in animal groups}. Superviseur: Prof. Frank Schweitzer. Thèse doctorale récompensée de la médaille de l'ETH Zurich en janvier 2013.}
+\cventry{2003--2008}{B.Eng. et M.Eng./M.Sc.}{INSA Toulouse}{France}{}{Diplôme d'ingénieur en électronique d'une Grande \'Ecole. Spécialisation: \'Electronique et Systèmes Embarqués. Project de M.Sc. à l'Université de Zurich, Institut de Zoologie. Titre: {\em GPS tracking and heart rate monitoring in meerkats: a technical approach}. Note finale: 17/20.}
+\cventry{2003}{Baccalaur\'eat}{Toulon}{France}{}{Série Scientifique, spécialité: Mathématiques. Mention: \textit{Tr\`es bien}.}
+
+\vspace*{-0.35cm}
+\section{Distinctions \& bourses de recherche}
+\cventry{2014}{\textmd{Conférence ``The secret social lives of bats'' nommée ``TED talk of the day''}}{}{}{}{}
+\cventry{2013}{\textmd{Médaille de l'ETH Zurich pour thèse de doctorat. Prix 1'500 CHF}}{}{}{}{}
+\cventry{2012}{\textmd{Bourse de voyage pour assister à la conférence ALife 13 (East Lansing MI, USA)}}{}{}{}{}
+\cventry{2012}{\textmd{Bourse de recherche du Fonds National Suisse: {\em Payoffs of local and global network structures: reproductive career paths in wild house mice} (with F. Schweitzer and B. K\"onig): CHF 492'111}}{}{}{}{}
+\cventry{2010}{\textmd{Prix du 2$^{\hbox{\scriptsize ème}}$ meilleur article à la conférence ECCS'10 (European Conference on Complex Systems). Prix 200 EUR}}{}{}{}{}
+\cventry{2008}{\textmd{Thèse de master nommée parmi les 10 meilleures (sur 400) à l'INSA de Toulouse}}{}{}{}{}
+
+\vspace*{-0.35cm}
+\section{Informations personnelles}
+\cventry{Né le}{\textmd{22 Novembre 1986 (27 ans)}}{}{}{}{}
+\cventry{\'Etat civil}{\textmd{Non-marié, fiancé}}{}{}{}{}
+\cventry{Langues}{\textmd{Anglais (courant), français (maternel), allemand (lu, parlé, écrit), italien (parlé)}}{}{}{}{}
+\cventry{Temps libre}{\textmd{Course à pied, sports de montagne, tennis, photographie, théâtre}}{}{}{}{}
+\vspace*{-0.35cm}
+
+% \newpage
+\vspace*{-0.5cm}
+\section{Expérience d'enseignement universitaire}
+\cventry{Printemps 2014}{Agent-Based Modelling of Social Systems}{ETH Zurich}{Maître de conférences}{Département de Management, Technologie et Economie}{Préparation des supports de cours magistraux et enseignement, encadrement des exercices et projets étudiants, évaluation des étudiants.}
+\cventry{Printemps 2014}{Animal Behaviour Literature Seminar}{Université de Zurich}{Maître de conférences}{Institut de Biologie de l'Evolution et des Sciences de l'Environnement}{Elaboration du programme des discussions, enseignement interactif des notions importantes, coordination et invitation des intervenants scientifiques.}
+\cventry{Printemps 2010}{Complex Adaptive Systems}{ETH Zurich}{Assistant}{}{Préparation des supports de cours.}
+
+\vspace*{-0.25cm}
+\section{Activités académiques}
+\cventry{Relecteur pour}{\textmd{Institutions: Deutsche Forschungsgemeinschaft, Revues: \textit{PLOS Computational Biology}, \textit{Journal of the Royal Society Interface}, \textit{PLOS ONE}, \textit{Animal Behaviour}, \textit{Behavioral Ecology and Sociobiology}, \textit{Ethology}}}{\textup{Conférences:} \textit{ECCS, ICAART, SocialSimulation}}{}{}{}
+\cventry{Organisation d'évènements}{\textmd{Workshop ``Quantitative Analysis of Collective Behaviour: From the Lab to the Wild'', 2014 Conference of the Animal Behavior Society, Princeton NJ, USA}}{}{}{}{}
+
+\vspace*{-0.25cm}
+\section{Activités de vulgarisation scientifique}
+\cventry{2013}{\textmd{Conférence de vulgarisation à TEDxZurich, sélectionnée pour la librairie TED.com. Conférence vue plus de 660'000 fois de février à mai 2014}}{}{}{}{}
+\cventry{2010-présent}{\textmd{Travaux de recherche couverts par des médias de vulgarisation tels que Pour La Science, Science et Vie, ScienceNOW, Discovery News, Smithsonian Magazine, New Scientist, ABC Science, MSNBC, ScienceNews, The Daily Mail..}}{}{}{}{}
+\cventry{}{\textmd{Nombreux entretiens pour des émissions de radio et des podcasts de vulgarisation}}{}{}{}{}
+\cventry{}{\textmd{Liste complète: \url{http://www.sg.ethz.ch/team/people/nperony/inthemedia}}}{}{}{}{}
+
+\vspace*{-0.25cm}
+\section{Compétences \& Intérêts}
+\cventry{Compétences scientifiques}{\textmd{Méthodes scientifiques: analyse de réseaux, modélisation multi-agents, télémétrie, traitement et visualisation de larges jeux de données, gestion de bases de données}}{}{}{}{}
+\cventry{}{\textmd{Biologie: connaissances en biologie de l'évolution, expérience du travail de terrain (Kalahari Meerkat Project, Afrique du Sud; Wild House Mouse project, Suisse)}}{}{}{}{}
+\cventry{}{\textmd{Compétences techniques: excellente connaissance des systèmes UNIX. Languages de programmation: MATLAB, Python, Mathematica, R, Java, SQL, \LaTeX/Ti{\em k}Z.}}{}{}{}{}
+\cventry{Intérêts de recherche}{Physique des sociétés}{}{}{}
+{
+\begin{itemize} \normalsize
+ \item Modélisation multi-agent des dynamiques sociales collectives
+ \item Analyse des réseaux sociaux et caractérisation de motifs
+ \item Processus stochastiques de mouvement et de recherche \vspace{0.1cm}
+\end{itemize}
+}
+\cventry{}{Comportement animal}{}{}{}
+{
+\begin{itemize} \normalsize
+ \item Structure et dynamique d'interactions sociales dans les sociétés complexes
+ \item Dynamiques collectives de groupes en mouvement
+ \item Prise de décision collective dans les groupes animaux \vspace{0.5cm}
+\end{itemize}
+}
+
+% \newpage
+
+{
+\raggedleft{\firstnamestyle{{\fontsize{30}{32}\sffamily\mdseries\upshape Publications \& Conférences}}~\familynamestyle{}}\\[-.35em]
+{\color{firstnamecolor}\rule{\textwidth}{.25ex}\\[2.5em]}
+}
+
+% Publications from a BibTeX file using the multibib package
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% \maketitle
+% \section{Publications in the last 5 years}
+\section{Publications {\normalsize(liste mise à jour le 21 mai 2014)}}
+\newcounter{myPubNumber}
+\setcounter{myPubNumber}{13}
+\renewcommand*{\bibliographyitemlabel}{\addtocounter{myPubNumber}{-1}{[\arabic{myPubNumber}}]}
+% Publications from a BibTeX file without multibib
+% \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+% need to run after pdflatex: bibtex pubInprep.aux, bibtex pubSubmitted.aux, bibtex pubPublished.aux bibtex pubTheses.aux
+
+% pubForthcoming,pubJournals,pubConfs,pubTheses
+% 
+\bibliographystylepubForthcoming{unsrt}
+\bibliographypubForthcoming{myPublications}
+\nocitepubForthcoming{garcia2014,richardson2014}
+% 
+\bibliographystylepubJournals{unsrt}
+\bibliographypubJournals{myPublications}
+\nocitepubJournals{auclair2014,perony2013b,baigger2013,svercel2013,perony2013,perony2012d,kerth2011}
+% 
+\newpage
+\bibliographystylepubConfs{unsrt}
+\bibliographypubConfs{myPublications}
+\nocitepubConfs{perony2012c, perony2012b,perony2010}
+
+\renewcommand*{\bibliographyitemlabel}{}
+
+\bibliographystylepubTheses{unsrt}
+\bibliographypubTheses{myPublications}
+\nocitepubTheses{perony2012,perony2008}
+
+\vspace*{0.5cm}
+\hspace*{2.87cm}$^*$Co-premiers auteurs.
+
+\vspace*{1.5cm}
+
+\section{Conférences scientifiques}
+\cventry{2008-présent}{\textmd{40+ conférences invitées, séminaires et présentations}}{}{}{}{}
+\cventry{}{\textmd{Liste complète: \url{http://www.sg.ethz.ch/team/people/nperony/talks}}}{}{}{}{}
+
+% \vspace*{0.5cm}
+% \section{Scientific talks}
+% \cventry{12.10.2011}{\textmd{Uncomplicated social complexity: descriptive and
+% mechanistic approaches to animal social behaviour}}{Lecture Series in
+% Behavioural and Evolutionary Ecology}{University of Bern, Switzerland}{}{}
+% \cventry{15.09.2011}{\textmd{The emergence of hierarchy through competition
+% in social organisations}}{Hierarchy workshop, ECCS'11}{University of
+% Vienna, Austria}{}{}
+% \cventry{14.09.2011}{\textmd{From individual energy to collective social
+% behaviour in animal populations}}{Social Energy workshop, ECCS'11}{University of
+% Vienna, Austria}{}{}
+% \cventry{13.09.2011}{\textmd{How random is social
+% behaviour?}}{ECCS'11 (European Conference on Complex Systems)}{University of
+% Vienna, Austria}{}{}
+% \cventry{03.05.2011}{\textmd{From Social Dynamics to Collective Motion (and
+% back)}}{Department of Biological Physics}{E\"otv\"os Lorand University,
+% Budapest, Hungary}{}{}
+% \cventry{15.04.2011}{\textmd{Animal Interactions in the social and physical
+% spaces}}{Institute of Evolutionary Biology and Environmental Studies}{University
+% of Zurich, Switzerland}{}{}
+% \cventry{13.10.2010}{\textmd{The dynamical social network of a wild house mouse
+% population}}{Institute of Evolutionary Biology and Environmental
+% Studies}{University of Zurich, Switzerland}{}{}
+% \cventry{27.09.2010}{\textmd{The dynamical social network of a wild house mouse
+% population}}{Data-driven dynamical networks workshop}{Les Houches Physics
+% School, France}{}{}
+% \cventry{16.09.2010}{\textmd{An agent-based approach to sociality in wild house
+% mice}}{Dynamics On and Of Complex Networks IV workshop, ECCS'10}{Lisbon
+% University Institute, Portugal}{}{}
+% \cventry{15.09.2010}{\textmd{Long-term community evolution in an animal
+% society}}{Science of Complex Networks 2010, ECCS'10}{Lisbon University
+% Institute, Portugal}{}{}
+% \cventry{14.09.2010}{\textmd{A stochastic model of social interaction in wild
+% house mice}}{ECCS'10 (European Conference on Complex Systems)}{Lisbon
+% University Institute, Portugal}{}{}
+% \cventry{02.03.2009}{\textmd{From Animal Societies to Complex Systems: the case
+% of roosting associations in Bechstein's bats}}{Zurich Interaction Seminar}{ETH
+% Zurich, Switzerland}{}{}
+% \cventry{13.11.2008}{\textmd{Social structures in Bechstein's bats}}{Animal
+% Behaviour Department}{University of Zurich, Switzerland}{}{}
+% \cventry{31.10.2008}{\textmd{Social structures in Bechstein's bats}}{Retreat of
+% the Zoological Institute of the University of Zurich}{Wildhaus, Switzerland}{}{}
+
+% \newpage
+
+%Without multibib
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{myPublications}
+
+
+
+\end{document}
